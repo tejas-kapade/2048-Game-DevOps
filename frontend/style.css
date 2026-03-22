@@ -1,0 +1,91 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #faf8ef;
+}
+
+h1 {
+  margin-bottom: 5px;
+}
+
+#score {
+  margin-bottom: 10px;
+}
+/*
+
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 90px);
+  gap: 10px;
+  justify-content: center;
+  margin: 20px auto;
+  background: #bbada0;
+  padding: 10px;
+  border-radius: 10px;
+}
+  */
+
+.cell {
+  width: 90px;
+  height: 90px;
+  background: #cdc1b4;
+  font-size: 26px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+
+  /* Smooth transition */
+  transition: all 0.2s ease-in-out;
+}
+
+/* Tile Colors */
+.tile-2    { background: #eee4da; color: #776e65; }
+.tile-4    { background: #ede0c8; color: #776e65; }
+.tile-8    { background: #f2b179; color: #fff; }
+.tile-16   { background: #f59563; color: #fff; }
+.tile-32   { background: #f67c5f; color: #fff; }
+.tile-64   { background: #f65e3b; color: #fff; }
+.tile-128  { background: #cc153a; color: #fff; }
+.tile-256  { background: #8a1010; color: #fff; }
+.tile-512  { background: #0c80a6; color: #fff; }
+.tile-1024 { background: #9e1d77; color: #fff; }
+.tile-2048 { background: #b700ff; color: #fff; }
+
+/* Container for left-right layout */
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Help section (left side) */
+#help {
+  width: 220px;
+  padding: 15px;
+  background: #eee4da;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 14px;
+}
+
+#help h3 {
+  margin-top: 0;
+}
+
+#help p {
+  margin: 8px 0;
+}
+
+/* Grid stays same */
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 90px);
+  gap: 10px;
+  background: #bbada0;
+  padding: 10px;
+  border-radius: 10px;
+}
