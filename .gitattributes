@@ -1,0 +1,6 @@
+# Force LF for all shell scripts and config files
+*.sh text eol=lf
+*.json text eol=lf
+*.tf text eol=lf
+Dockerfile text eol=lf
+.gitignore text eol=lf

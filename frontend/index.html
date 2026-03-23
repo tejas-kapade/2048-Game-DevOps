@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>2048 Game</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>2048 Game</h1>
+  <h2 id="score">Score: 0</h2>
+
+  <div id="container">
+    <!-- LEFT: Help -->
+    <div id="help">
+      <h3>How to Play</h3>
+      <p>Use <b>Arrow Keys</b> (↑ ↓ ← →) on your keyboard.</p>
+      <p>Merge same numbers to grow tiles.</p>
+      <p>Reach <b>2048</b> to win.</p>
+    </div>
+
+    <!-- RIGHT: Game -->
+    <div id="grid"></div>
+  </div>
+  <div id="gameOverModal" class="modal hidden">
+  <div class="modal-content">
+    <h2>Game Over</h2>
+    <p id="finalScore"></p>
+    <p id="highScore"></p>
+    <button onclick="restartGame()">Play Again</button>
+  </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
