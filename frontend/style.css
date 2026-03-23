@@ -108,6 +108,7 @@ h1 {
 .cell.new {
   animation: pop 0.2s ease;
 }
+  
 
 @media (max-width: 768px) {
   #container {

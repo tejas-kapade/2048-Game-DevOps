@@ -1,7 +1,7 @@
 provider "google" {
   project = "project-28225aef-d526-47fe-81e"
-  region  = "asia-south1"
-  zone    = "asia-south1-a"
+  region  = "us-central1"
+  zone    = "us-central1-a"
 }
 
 resource "google_compute_instance" "vm_instance" {
